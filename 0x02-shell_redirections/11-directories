@@ -1,6 +1,2 @@
 #!/bin/bash
-# find . mindepth l -type d | wc -l
-num_dirs=$(find . -mindepth 1 -type d | grep -v "/\.$" | wc -l)
-
-echo "Number of directories and sub-directories: $num_dirs"
-
+find . -mindepth 1 -type d | wc -l
